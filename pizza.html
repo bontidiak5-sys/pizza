@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza rendelés</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Pizza rendelés</h1>
+
+        <form id="pizzaForm">
+            <section>
+                <h2>Méret</h2>
+                <div id="sizes"></div>
+            </section>
+
+            <section>
+                <h2>Szósz (egy választható)</h2>
+                <div id="sauces"></div>
+            </section>
+
+            <section>
+                <h2>Feltétek (több választható)</h2>
+                <div id="toppings"></div>
+            </section>
+
+            <section>
+                <label>Darabszám: <input type="number" id="quantity" min="1" value="1"></label>
+            </section>
+
+            <section class="price-row">
+                <div>Ár: <span id="price">0</span> Ft</div>
+                <div>
+                    <button type="button" id="orderBtn">Rendelés</button>
+                    <button type="button" id="clearBtn">Törlés</button>
+                </div>
+            </section>
+        </form>
+
+        <section>
+            <h2>Rendelés összegzés</h2>
+            <div id="summary" class="summary-card">
+                <div class="empty">Nincs rendelés.</div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="pizza.js"></script>
+</body>
+</html>
